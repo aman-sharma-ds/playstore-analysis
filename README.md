@@ -39,27 +39,6 @@ The raw data had several quality issues that needed fixing before analysis:
 | Duplicate apps | Removed duplicates by app name, keeping the entry with the most reviews |
 | Missing `Rating` (~1,400 apps) | Left as NaN so averages and plots are not distorted by artificial values |
 
-## Analysis & Key Findings
-
-### 1. Market composition
-- **Family, Game and Tools** are the three largest categories by number of apps.
-- The Play Store is overwhelmingly **free**: free apps outnumber paid apps by roughly 10 to 1.
-- Most apps are rated **"Everyone"**, with "Teen" a distant second; adult-only and unrated apps are very rare.
-
-![Category distribution](images/category_distribution.png)
-
-### 2. Ratings
-- Ratings are concentrated at the high end, mostly between 4.0 and 4.5.
-- Average rating differs only slightly across categories (roughly 4.3 to 4.4 for the top ones, led by **Events** and **Education**), so category alone is a weak predictor of quality.
-
-![Top 10 categories by average rating](images/top10_categories_rating.png)
-
-### 3. Installs and engagement
-- On a log-log scale, **installs and reviews show a strong positive relationship**: apps with more installs consistently collect more reviews.
-- The most-installed apps (1B+) are dominated by Google's own products, WhatsApp, Instagram and Subway Surfers.
-
-![Installs vs Reviews](images/installs_vs_reviews.png)
-
 ## Project Structure
 
 ```
